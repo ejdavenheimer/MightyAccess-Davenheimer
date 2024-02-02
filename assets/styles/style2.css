@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+header{
+    height: 220px;
+}
+
+.portada{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -190px;
+    filter: opacity(70%);
+}
+
+.titulo{
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    font-size: 54px;
+    width: 100%;
+    text-align: center;
+    text-shadow: #00000044 2px 5px;
+}
+
+.layout{
+    background-color: #EEE;
+}
+
+.titulo__tema{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+}
+
+.container__menu{
+    position: absolute;
+    top: 230px;
+    right: 50px;
+}
+
+.container__menu .menu__item{
+    background-color: #FFE892;
+    padding: 5px 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.container__contenido{
+    padding: 20px 100px;
+    
+}
+
+.parrafos{
+    margin-bottom: 20px;
+}
+
+.portada__about{
+    object-position: 0 -50px;
+}
+
+.enlace__actual{
+    color: #000;
+    border-bottom: 5px solid blue;
+}
+
+.contenido__contact{
+    position: absolute;
+}
