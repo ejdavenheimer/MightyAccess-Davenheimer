@@ -1,0 +1,176 @@
+:root {
+    --azul: #0D1282;
+    --blanco: #EEEDED;
+    --amarillo:#F0DE36;
+    --rojo: #D71313;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+/* Estilo general */
+.layout{
+    min-height: 100vh;
+    background-color: var(--blanco);
+}
+
+.banner__data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul);
+    color: var(--blanco);
+    height: 150px;
+}
+.logo{
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--blanco);
+}
+
+.menu__item{
+    text-decoration: none;
+    border-right: 1px solid var(--azul);
+    padding-right: 10px;
+    color:#000;
+}
+
+.menu__item:nth-last-child(1){
+    border-right: none;
+}
+.enlace__actual{ /*  Cambiar por active */
+    color: var(--rojo);
+}
+/* Container  */
+.container__articles{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: justify;
+    padding: 30px;
+}
+/* Estilo index */
+.banner__topic{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+}
+.banner__imagen{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 0 -190px;
+    display: block;
+    opacity: 0.6;
+}
+.title__topic{
+    position: absolute;
+    color: var(--blanco);
+    margin-left: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    border-left: 2px solid white;
+    font-size: 32px;
+}
+.card{
+    border: 2px solid var(--azul);
+    border-radius: 5px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    background-color: #DDD;
+}
+.card__date{
+    border-bottom: 1px solid var(--azul);
+    color: var(--blanco);
+    background-color: var(--azul);
+}
+.card__txt{
+    display: flex;
+    height: 50px; /* Corregir esto, sin tener que darle un alto. Que lo haga directamente el flexbox*/
+    align-items: center;
+    justify-content: center;
+}
+/* ABOUT */
+#imagen__about{
+    object-position: 0 -70px;
+}
+/* RULES & POLICIES */
+.title__rules{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.list__year{
+    list-style-type: lower-latin;
+}
+.content__rules{
+    margin-bottom: 40px;
+}
+#list__regulation p{
+    margin-bottom: 10px;
+}
+.content__rules ul{
+    list-style-type: circle;
+    margin-left: 40px;
+}
+#imagen_rules{
+    object-position: 0 -220px;
+}
+/* Game Information*/
+.tabla{
+    border-spacing: 5px;
+    margin: 30px 0;
+}
+.tabla td{
+    width: 130px;
+}
+.tabla__date{
+    text-align: center;
+}
+th{
+    text-align: justify;
+}
+th, td{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#match__advert{
+    font-style: italic;
+    text-decoration: underline;
+}
+span{
+    font-weight: 500;
+}
+#flex__question{
+    display: flex;
+    justify-content: space-between;
+}
+.extra__info{
+    line-height: 36px;
+}
+#extra__style{
+    margin-bottom: 30px;
+}
+.container__game{
+    width: 90vw;
+    padding: 30px 200px;
+}
+
+.title__topic h2{
+    font-size: inherit;
+}
+.title__topic p{
+    font-size: 18px;
+}
+#imagen__game{
+    object-position: 0 -120px;
+}

@@ -4,41 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/LogoMightyDucks-01.png" type="image/x-icon">
-    <!-- Estilo elegido, opción 1 -->
-    <!-- <link rel="stylesheet" href="./assets/styles/style.css"> -->
-
-    <!-- Estilo personlizado -->
-    <link rel="stylesheet" href="./assets/styles/style2.css">
-
+    <link rel="stylesheet" href="./assets/styles/mdhl.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Home Page MDHL</title>
 </head>
 <body>
     <div class="layout">
         <header>
-            <img class="portada" src="./assets/images/hockey1.jpg" alt="Player of Hockey">
-            <h1 class="titulo">Mighty Ducks Hockey League</h1>
+            <div class="layout__header">
+                <div class="banner__data">
+                    <img class="logo" src="./assets/images/LogoMightyDucks-01.png" alt="Logo">
+                    <h1 class="title">Mighty Ducks Hockey League</h1>
+                </div>
+                <nav class="menu">
+                    <a class="menu__item enlace__actual" href="#">Home</a>
+                    <a class="menu__item" href="./about.html">About MDHL</a>
+                    <a class="menu__item" href="./game_info.html">Game Information</a>
+                    <a class="menu__item" href="./rulesPolicies.html">Rules & Policies</a>
+                    <a class="menu__item" href="./contact.html">Contact</a>
+                </nav>
+            </div>
         </header>
         
-        <main>
-            <h2 class="titulo__tema">Upcoming Events</h2>
-            <img class="logo" src="./assets/images/LogoMightyDucks-01.png" alt="Logo">
-            
-            <nav class="container__menu">
-                <a class="menu__item enlace__actual" href="#">Home</a>
-                <a class="menu__item" href="./about.html">About MDHL</a>
-                <a class="menu__item" href="./contact.html">Contact</a>
-            </nav>
-            <section class="container__contenido">
-                <h4><em>&ensp;August 4</em></h4>
-                <p class="parrafos">&emsp;MDSL Fundraiser</p>
-            
-                <h4><em>&ensp;August 16</em></h4>
-                <p class="parrafos">&emsp;Season Kick-off: Meet the Teams</p>
-            
-                <h4><em>&ensp;September 1</em></h4>
-                <p class="parrafos">&emsp;First Game of the Season (Check Game Schedule for details)</p>
-            </section>
+       <main>
+            <div class="banner__topic">
+                <img class="banner__imagen" src="./assets/images/hockey1.jpg" alt="Player of Hockey">
+                <h2 class="title__topic">Upcoming Events</h2>
+            </div>
+        
+            <div class="container__articles">
+                <article class="card">
+                    <h4 class="card__date"><em>August 4</em></h4>
+                    <p class="card__txt parrafos">MDSL Fundraiser</p>
+                </article>
+
+                <article class="card">
+                    <h4 class="card__date"><em>August 16</em></h4>
+                    <p class="card__txt parrafos">Season Kick-off: Meet the Teams</p>
+                </article>
+
+                <article class="card">
+                    <h4 class="card__date"><em>September 1</em></h4>
+                    <p class="card__txt parrafos">First Game of the Season (Check Game Schedule for details)</p>
+                </article>
+            </div>
             
         </main>
     </div>

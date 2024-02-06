@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/LogoMightyDucks-01.png" type="image/x-icon">
-    <!-- Estilo elegido, opción 1 -->
-    <!-- <link rel="stylesheet" href="./assets/styles/style.css"> -->
-
-    <!-- Estilo personlizado -->
-    <link rel="stylesheet" href="./assets/styles/style2.css">
+    <link rel="stylesheet" href="./assets/styles/mdhl.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Contact MDHL</title>
@@ -16,25 +12,31 @@
 <body>
     <div class="layout">
         <header>
-            <img class="portada" src="./assets/images/hockey3.jpg" alt="Player of Hockey">
-            <h1 class="titulo">Mighty Ducks Hockey League</h1>
+            <div class="layout__header">
+                <div class="banner__data">
+                    <img class="logo" src="./assets/images/LogoMightyDucks-01.png" alt="Logo">
+                    <h1 class="title">Mighty Ducks Hockey League</h1>
+                </div>
+                <nav class="menu">
+                    <a class="menu__item" href="./index.html">Home</a>
+                    <a class="menu__item" href="./about.html">About MDHL</a>
+                    <a class="menu__item" href="./game_info.html">Game Information</a>
+                    <a class="menu__item" href="./rulesPolicies.html">Rules & Policies</a>
+                    <a class="menu__item enlace__actual" href="#">Contact</a>
+                </nav>
+            </div>
         </header>
 
-
         <main>
-            <h2 class="titulo__tema">Contact</h2>
-            <img class="logo" src="./assets/images/LogoMightyDucks-01.png" alt="Logo">
-
-            <nav id="posicion__contact" class="container__menu">
-                <a class="menu__item" href="./index.html">Home</a>
-                <a class="menu__item" href="./about.html">About MDHL</a>
-                <a class="menu__item enlace__actual" href="#">Contact</a>
-            </nav>
-            <section class="container__contenido contenido__contact">
+            <div class="banner__topic">
+                <img class="banner__imagen" src="./assets/images/hockey3.jpg" alt="Player of Hockey">
+                <h2 class="title__topic">Contact</h2>
+            </div>
+            
+            <div class="container__articles">
                 <p>Please email us at <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a></p>
                 <p>We reply to your email as soon as we can.</p>
-            </section>
-            
+            </div>
         </main>
     </div>
 </body>
