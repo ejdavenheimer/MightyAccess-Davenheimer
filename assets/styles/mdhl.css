@@ -174,3 +174,59 @@ span{
 #imagen__game{
     object-position: 0 -120px;
 }
+.layout_maps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+/* Registration */
+.form{
+    border: 1px solid var(--azul);
+    padding: 20px;
+}
+.layout__form{
+    padding: 20px;
+}
+.form__personal{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__personal label{
+    line-height: 40px;
+}
+.container__closest{
+    display: flex;
+    flex-direction: column;
+}
+.form fieldset{
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #AAA;
+}
+.form_text{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--azul);
+}
+.form_double{
+    display: flex;
+    gap: 20px;
+}
+#form_permision{
+    margin: 20px 0;
+}
+
+#button_submit{
+    width: 80px;
+    height: 40px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    border: none;
+}
+#button_submit:hover{
+    background-color: var(--blanco);
+    color: var(--azul);
+    border: 1px solid var(--azul);
+    transition-duration: 0.5s;
+}
